@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Encriptador Alura</title>
+    <link rel="stylesheet" href="reset.css/reset.css">
+    <link rel="stylesheet" href="Challenge ONE Encriptador de Texto.css">
+    
+    </head>
+   
+    <body>
+
+       <header>
+            <nav class="principal">
+                <h1><img src="img/Logo.png" alt="logo alura"></h1>
+            </nav>
+        </header>
+
+       <main>
+        
+        <textarea class="textoencriptar" id="textoencriptar" rows="15" cols="30"oninput="autoExpand(this)" required placeholder="Ingrese el texto a encriptar"></textarea>
+
+            <fieldset>
+                <nav>
+                    <fieldset>
+                        <textarea name="" id="inputsalida" rows="29" cols="26" class="inputsalida" readonly></textarea>
+                        <h2><img id="img" class="salidaimagen" src="img/Muñeco.png" alt=""></h2>
+                        <p id="msg1" class="mensaje">Ningún mensaje fue <br>encontrado</p>
+                        <p id="msg2" class="segundomensaje">Ingrese el texto que desees encriptar o <br> desencriptar</p>
+                        <input type="submit" class="copiar" onclick="copiarYRecargar()" value="Copiar">
+                    </fieldset>
+                    
+
+                     <p class="recomendacion">&#128712Solo letras minusculas y sin acentos</p>
+            
+                    <input type="submit" class="encriptar" onclick="encriptar()" value="Encriptar">
+                    <input type="submit" class="desencriptar" onclick="desencrptar()" value="Desencriptar">
+                </nav>
+                
+            </fieldset>
+            
+
+       </main>
+
+         <footer>
+            <p class="copyright">&copy Copyright Edgar David Carcamo Cerrato - 2023</p>
+        </footer>  
+         
+        <script src="./scriptChalegue.js">//Mandando allamar el script</script> 
+
+    </body>
+</html>
